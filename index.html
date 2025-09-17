@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weiliang Deng</title>
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico"> -->
+    <link rel="stylesheet" href="red.css" type="text/css">
+    <style>
+        @font-face {
+            font-family: 'TriForceFont';
+            src: url('assets/Triforce.ttf') format('truetype');
+        }
+
+        .TriForceFont {
+            font-family: 'TriForceFont', sans-serif !important;
+            font-size: 3.0rem;
+        }
+
+        a {
+        color: #007cba; 
+        text-decoration: none; 
+        }
+
+        a:hover {
+        color: #bb0000;
+        text-decoration: none; 
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="assets/img/bio1.jpg" border="0" width="250" style="margin-left: 15px;"><br>
+                </td>
+                <td style="padding:0.5%;width:70%;vertical-align:middle">
+                    <div id="toptitle">
+                        <h1 style="color: black;">Weiliang Deng &nbsp 邓伟亮</h1>
+                    </div> 
+                    <p>I am a First-year Master student in <a href=https://ise.sysu.edu.cn/index.htm>The School of Intelligent Systems Engineering</a> at <a href=https://www.sysu.edu.cn/sysuen>Sun Yat-sen University</a>.
+                        Now I am a member of <a href=https://github.com/SYSU-HILAB>Hardware and Intelligence (HI) Lab </a> and working on Aerial Robots with Assoc. Prof. <a
+                       href="https://scholar.google.com.hk/citations?user=obB-btEAAAAJ&hl=en">Ximin Lyu</a>. 
+                       
+                       Previously, I worked as a Research Assistant at <a href="https://www.shlab.org.cn/">Shanghai AI Laboratory</a>, where I conducted research in Embodied AI under the supervision of <a href="https://yaomarkmu.github.io">Yao Mu</a> in the <a href="https://scalelab-sjtu.github.io">ScaleLab</a>. 
+                       
+                       I obtained my bachelor degree at <a href="https://www.sysu.edu.cn/sysuen" target="blank">Sun Yat-sen University</a>.
+                       <br>
+                       <br>
+                       My research interests lie at <strong>Aerial Robotics</strong> and <strong>Manipulation</strong>.
+                        <br><br>
+                       <img src="assets/img/gmail.png" width="20px" style="margin-bottom:-2px"> dengwl.2021 [at] gmail [dot] com<br><br>
+                       </p>
+                    <p style="line-height: 1.8;">
+                        <a href="https://github.com/Dwl2021">
+                            <img src="assets/img/github.jpeg" width="20px" style="margin-bottom:-3px">
+                            GitHub (Dwl2021)
+                        </a><br>
+                        <a href="https://scholar.google.com/citations?user=3PjlEN4AAAAJ&hl=zh-CN" target="blank">
+                            <img src="assets/img/GS.png" width="20px" style="margin-bottom:-3px">
+                            Google Scholar
+                        </a><br>
+                        <!-- <a href="https://preminstrel.github.io/blog" target="blank">
+                            <img src="assets/img/blog.jpeg" width="20px" style="margin-bottom:-3px">
+                            Blog
+                        </a> -->
+                    </p>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>News</h2>
+    <ul>
+        <div style="max-height:170px;width:fit-content;overflow:auto;background:#FFFFFF;">
+            <li>
+                <p style="line-height: 1.5;">[2025/06/16] Our <a
+                            href="https://arxiv.org/pdf/2506.15539" target="blank">Paper</a> has been accepted by <img src="assets/img/IROS-HZ.png" height="20px" style="vertical-align:middle"> IROS 2025!  See you in Hangzhou!</p>
+            </li>
+            <li>
+                <p style="line-height: 1.5;">[2025/01/28] Our <a
+                            href="https://arxiv.org/pdf/2501.06122" target="blank">NDOB-Based Controller</a> has been accepted by <img src="assets/img/ICRA-ALT.jpg" height="20px" style="vertical-align:middle"> ICRA 2025!  See you in Atlanta!</p>
+            </li>
+        </div>
+    </ul>
+    <h2>Publications</h2>
+    <div id="selected_publications">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr onmouseout="triforce_stop('whole_body_rep')" onmouseover="triforce_start('whole_body_rep')">
+                <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div>
+                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="whole_body_rep">
+                            <video loop autoplay muted width="400px" >
+                                <source src="assets/video/whole_body.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/whole_body.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
+                </td>
+                
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <b>Whole-Body Integrated Motion Planning for Aerial Manipulators</b>
+                    <br>
+                    <br>
+                    <strong>Weiliang Deng</strong>*, Hongming Chen*, Biyu Ye, Haoran Chen, and Ximin Lyu<br>
+                    <p>Under review</p><br>
+                    <p>
+                        <a href="https://arxiv.org/pdf/2501.06493" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV1pxcHebEqr/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
+                    </p>
+                    <br>
+                    <p>A Novel Whole-body Motion Planner Framework for Aerial Manipulators</p>
+                </td>
+            </tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr onmouseout="triforce_stop('workspace_rep')" onmouseover="triforce_start('workspace_rep')">
+                <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div>
+                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="workspace_rep">
+                            <video loop autoplay muted width="400px" >
+                                <source src="assets/video/workspace.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/workspace.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
+                </td>
+                
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <b>Aerial Grasping via Maximizing Delta-Arm Workspace Utilization</b>
+                    <br>
+                    <br>
+                    Hongran Chen*, <strong>Weiliang Deng</strong>*, Biyu Ye, Yifan Xiong, Zongliang Pan and Ximin Lyu<br>
+                    <p><i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>, 2025</p><br>
+                    <p>
+                        <a href="https://arxiv.org/pdf/2506.15539" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV1JuZpYEE7S/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
+                    </p>
+                    <br>
+                    <p>We present a trajectory planner for aerial grasping that maximizes workspace use by learning the delta arm's feasibility and kinematics.</p>
+                </td>
+            </tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+        </table>
+        <table>
+            <tr onmouseout="triforce_stop('ndob_rep')" onmouseover="triforce_start('ndob_rep')">
+                <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div style="position: relative;">
+                        <div style="opacity: 0; position: absolute; top: -22px; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="ndob_rep">
+                            <video loop autoplay muted width="400px" >
+                                <source src="assets/video/ndob.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/ndob.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
+                </td>
+
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <b>NDOB-Based Control of a UAV with Delta-Arm Considering Manipulator Dynamics
+                    </b> <br>
+                    <br>
+                    Hongming Chen, Biyu Ye, Xianqi Liang, <strong>Weiliang Deng</strong>, and Ximin Lyu
+                    <br>
+                    <p><i>IEEE International Conferenceon Robotics and Automation (ICRA)</i>, 2025</p><br>
+                    <p>
+                        <a href="https://arxiv.org/pdf/2501.06122" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
+                    </p>
+                    <br>
+                    <p>Proposed an NDOB-based controller for UAV with delta-arm, enhancing agility and achieving millimeter-level precision through disturbance compensation and high-pass filtering.</p>
+                </td>
+            </tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+        </table>
+    </div>
+    
+
+    <h2>Experiences</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td width="800">
+                    <p><strong> Shanghai Ailab (March 2025 - Sept 2025)</strong></p>
+                    <i>Research Intern</i>
+                    <ul>
+                        <!-- <li>Overall GPA: <font style="color: #bb0000;"> 4.0/4.0</font></li> -->
+                        <li>Embodied AI @ Manipuation</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="assets/img/shailab.png" width="180px" style="margin-left: 0px;">
+                </td>
+            </tr>
+            <tr></tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <td width="800">
+                    <p><strong> Sun Yat-sen University, Shenzhen, China (Sep 2021 - Jul 2025)</strong></p>
+                    <i>B.E. in Intelligence Science and Technology</i>
+                    <ul>
+                        <li>2021 & 2022 & 2023 Sun Yat-sen University Scholarship</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="assets/img/sysu_icon.svg" width="300px" style="margin-left: 0px;">
+                </td>
+            </tr>
+            <tr></tr>
+        </tbody>
+    </table>
+    <!-- <h2>Research Experience</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td width="800">
+                    <p><strong>University of Alberta, Edmonton, Canada (Jul 2022 - Oct 2022)</strong></p>
+                    <i>Mitacs Globalink Research Internship</i>
+                    <ul>
+                        <li>Supervisor: Prof. <a href="https://www.ece.ualberta.ca/~xingyu/index.html">Xingyu Li</a>
+                        </li>
+                        <li>Project: Weak/self Supervised Learning for Anomaly Detection</li>
+                        <li>
+                            <a href="https://www.mitacs.ca/en/programs/globalink/globalink-graduate-fellowship">
+                                Globalink Graduate Fellowship
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td><br><br><br><br></td>
+                <td>
+                    <img src="assets/img/University_of_Alberta_logo.png" width="285px">
+                        <center><img src="assets/img/mitacs.jpeg" width="245px"></center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table>
+        <tbody>
+            <tr>
+                <td width="800">
+                    <p><strong> Southeast University, Nanjing, China (Oct 2020 - Jul 2022)</strong></p>
+                    <i>Research Assitant in <a href="http://palm.seu.edu.cn/members.html">PALM Lab</a> and  <a href="https://electronic.seu.edu.cn/dz_en/11384/list.htm">
+                        National Engineering Research Center For ASIC
+                    </a></i>
+                    <ul>
+                        <li>Supervisor: Prof.
+                            <a href="https://scholar.google.co.uk/citations?user=EnDCJKMAAAAJ&hl=en">Yi Zhou</a>, Prof. <a href="https://electronic.seu.edu.cn/lh/list.htm">Hao Liu</a>
+                        </li>
+                        <li>Project 1: Energy-efficient DNN Algorithm for ECG Classification</li>
+                        <li>Project 2: Multi-Modal Multi-task Transformer on Disease Detection</li>
+                        <li>Project 3: Multi-task Learning For Multi-disease Classification</li>
+                    </ul>
+                </td>
+                <td width="141px">
+                    <img id="school_logo" src="assets/img/PALMLogo.png" width="120px">
+                </td>
+                <td width="144px">
+                    <img src="assets/img/seu_ee.jpeg" width="125px">
+                </td>
+            </tr>
+            <tr></tr>
+        </tbody>
+    </table> -->
+
+    <!-- <h2>Professional Experience</h2> -->
+    <!-- <table>
+        <tbody>
+            <tr>
+                <td width="800">
+                    <p><strong>ByteDance Inc., Seattle, United States (Jun 2024 - Aug 2024)</strong></p>
+                    <i>Machine Learning System Research Intern in Seed-Foundation Team</i>
+                    <ul>
+                        <li>Placeholder</li>
+                    </ul>
+                    </li>
+                </td>
+                <td width="288px">
+                    <img src="assets/img/ByteDance Logo English.png" width="288px" style="padding:10px;vertical-align:middle">
+                </td>
+            </tr>
+            <tr>
+                <td width="800">
+                    <p><strong>Apple Inc., Shenzhen, China (Nov 2022 - Jun 2023)</strong></p>
+                    <i>R&D Intern in iPad System EE</i>
+                    <ul>
+                        <li>Built a python automation test frame that can run on multiple units, collect and analyze logs</li>
+                        <li>Issue reproduction, symptom capture, and hands-on debugging for coexistence testing</li>
+                        <li>Created web pages with diverse visualization of the analyzed data using Flask</li>
+                    </ul>
+                    </li>
+                </td>
+                <td width="288px">
+                    <img src="assets/img/apple.svg" width="288px">
+                </td>
+            </tr>
+            <tr></tr>
+        </tbody>
+    </table> -->
+    <!-- <h2>Miscellaneous</h2>
+    <h4>Videos:</h4>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/JYPw38QwzDM"></iframe>   
+    <p>
+    <details>
+        <summary>Friends (click to expand, random order)</summary>
+        <ul>
+            <li>HKU: <a href=" http://yazhou-z.github.io">Yazhou Zhao</a></li>
+            <li>SJTU: <a href=" http://yanjieze.com">Yanjie Ze</a></li>
+            <li>JHU: <a href="https://horaceyi.github.io/">Hongrui Yi</a></li>
+            <li>Columbia University: <a href="https://eshoyuan.github.io">Yixiao Yuan</a></li>
+            <li>UW: <a href="https://huapengzhou.life">Huapeng Zhou</a></li>
+            <li>BU: <a href="https://ming-cong-tang.com/">Mingcong Tang</a></li>
+            <li>HHU: <a href="https://carelessty.github.io">Tingyu Chen</a></li>
+            <li>CUC: <a href="https://primopan.github.io">Primo Pan</a></li>
+        </ul>
+    </details>
+    </p> -->
+    <div clss="footer">
+        <p>
+            <!-- <center>
+                <div align="center" style="width:18%">
+                    <script type="text/javascript" id="clstr_globe"
+                        src="//clustrmaps.com/globe.js?d=XU6JrQnKZEyIB6O3OwVxgskULQ1Qf9Uu5D17OS6SISE"></script>
+                </div>
+            </center> -->
+        </p>
+        <center>
+            <p style="color: darkgray;"> © Biyu Ye 2025</p>
+        </center>
+
+    </div>
+
+
+
+</body>
+
+</html>
