@@ -27,6 +27,221 @@
         color: #bb0000;
         text-decoration: none; 
         }
+
+        /* 论文卡片样式 */
+        .paper-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            margin: 20px 0;
+            padding: 25px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            border-color: rgba(0, 124, 186, 0.2);
+        }
+
+        .paper-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #007cba, #bb0000);
+            border-radius: 15px 15px 0 0;
+        }
+
+        .paper-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            text-decoration: none;
+        }
+
+        .paper-title:hover {
+            color: #007cba;
+            text-decoration: none;
+        }
+
+        .paper-authors {
+            color: #34495e;
+            font-size: 1.05em;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .paper-venue {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+
+        .paper-links {
+            margin: 15px 0;
+        }
+
+        .paper-links a {
+            display: inline-block;
+            background: linear-gradient(135deg, #007cba, #005a8b);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 10px;
+            margin-bottom: 8px;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+
+        .paper-links a:hover {
+            background: linear-gradient(135deg, #bb0000, #8b0000);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(187, 0, 0, 0.3);
+            text-decoration: none;
+            color: white;
+        }
+
+        .paper-abstract {
+            color: #555;
+            line-height: 1.6;
+            font-size: 1em;
+            margin-top: 15px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .status-accepted {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+        }
+
+        .status-under-review {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+        }
+
+        .video-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .video-container:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            border-radius: 10px;
+        }
+
+        .paper-image {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .paper-image:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 经历卡片样式 */
+        .experience-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            margin: 20px 0;
+            padding: 25px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+            border-color: rgba(0, 124, 186, 0.2);
+        }
+
+        .experience-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #007cba, #bb0000);
+            border-radius: 15px 15px 0 0;
+        }
+
+        .experience-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .experience-position {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .experience-details {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .experience-details ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .experience-details li {
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .experience-logo {
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            max-width: 200px;
+            height: auto;
+        }
+
+        .experience-logo:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 
@@ -90,175 +305,195 @@
     </ul>
     <h2>Publications</h2>
     <div id="selected_publications">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tr onmouseout="triforce_stop('whole_body_rep')" onmouseover="triforce_start('whole_body_rep')">
-                <td style="padding:10px;width:25%;vertical-align:middle">
-                    <div>
-                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="whole_body_rep">
-                            <video loop autoplay muted width="400px" >
-                                <source src="assets/video/whole_body.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+        <div class="paper-card">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tr>
+                    <td style="padding:10px;width:30%;vertical-align:middle">
+                        <div class="video-container" onmouseout="triforce_stop('whole_body_rep')" onmouseover="triforce_start('whole_body_rep')">
+                            <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out; z-index: 10;" id="whole_body_rep">
+                                <video loop autoplay muted width="100%" style="border-radius: 10px;">
+                                    <source src="assets/video/whole_body.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div>
+                                <img src="assets/img/whole_body.png" alt="Whole-Body Motion Planning" class="paper-image" style="width: 100%; padding-top:0px; padding-bottom: 10px;">
+                            </div>
                         </div>
-                        <div>
-                            <img src="assets/img/whole_body.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        <script type="text/javascript">
+                            function triforce_start(idName) {
+                                document.getElementById(idName).style.opacity = '1';
+                            }
+                            function triforce_stop(idName) {
+                                document.getElementById(idName).style.opacity = '0';
+                            }
+                            triforce_stop()
+                        </script>
+                    </td>
+                    
+                    <td style="padding:20px;width:70%;vertical-align:middle">
+                        <div class="paper-title">Whole-Body Integrated Motion Planning for Aerial Manipulators</div>
+                        
+                        <div class="paper-authors">
+                            <strong>Weiliang Deng</strong>*, Hongming Chen*, Biyu Ye, Haoran Chen, and Ximin Lyu
                         </div>
-                    </div>
-                    <script type="text/javascript">
-                        function triforce_start(idName) {
-                            document.getElementById(idName).style.opacity = '1';
-                        }
-                        function triforce_stop(idName) {
-                            document.getElementById(idName).style.opacity = '0';
-                        }
-                        triforce_stop()
-                    </script>
-                </td>
-                
+                        
+                        <div class="paper-venue">
+                            Under review
+                        </div>
+                        
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/pdf/2501.06493" target="blank">📄 arXiv</a>
+                            <a href="https://www.bilibili.com/video/BV1pxcHebEqr/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">🎥 Demo</a>
+                        </div>
+                        
+                        <div class="paper-abstract">
+                            A Novel Whole-body Motion Planner Framework for Aerial Manipulators
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="paper-card">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tr>
+                    <td style="padding:10px;width:30%;vertical-align:middle">
+                        <div class="video-container" onmouseout="triforce_stop('workspace_rep')" onmouseover="triforce_start('workspace_rep')">
+                            <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out; z-index: 10;" id="workspace_rep">
+                                <video loop autoplay muted width="100%" style="border-radius: 10px;">
+                                    <source src="assets/video/workspace.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div>
+                                <img src="assets/img/workspace.png" alt="Aerial Grasping" class="paper-image" style="width: 100%; padding-top:0px; padding-bottom: 10px;">
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            function triforce_start(idName) {
+                                document.getElementById(idName).style.opacity = '1';
+                            }
+                            function triforce_stop(idName) {
+                                document.getElementById(idName).style.opacity = '0';
+                            }
+                            triforce_stop()
+                        </script>
+                    </td>
+                    
+                    <td style="padding:20px;width:70%;vertical-align:middle">
+                        <div class="paper-title">Aerial Grasping via Maximizing Delta-Arm Workspace Utilization</div>
+                        
+                        <div class="paper-authors">
+                            Hongran Chen*, <strong>Weiliang Deng</strong>*, Biyu Ye, Yifan Xiong, Zongliang Pan and Ximin Lyu
+                        </div>
+                        
+                        <div class="paper-venue">
+                            <i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>, 2025
+                        </div>
+                        
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/pdf/2506.15539" target="blank">📄 arXiv</a>
+                            <a href="https://www.bilibili.com/video/BV1JuZpYEE7S/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">🎥 Demo</a>
+                        </div>
+                        
+                        <div class="paper-abstract">
+                            We present a trajectory planner for aerial grasping that maximizes workspace use by learning the delta arm's feasibility and kinematics.
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="paper-card">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tr>
+                    <td style="padding:10px;width:30%;vertical-align:middle">
+                        <div class="video-container" onmouseout="triforce_stop('ndob_rep')" onmouseover="triforce_start('ndob_rep')">
+                            <div style="opacity: 0; position: absolute; top: 0; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out; z-index: 10;" id="ndob_rep">
+                                <video loop autoplay muted width="100%" style="border-radius: 10px;">
+                                    <source src="assets/video/ndob.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div>
+                                <img src="assets/img/ndob.png" alt="NDOB-Based Control" class="paper-image" style="width: 100%; padding-top:0px; padding-bottom: 10px;">
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            function triforce_start(idName) {
+                                document.getElementById(idName).style.opacity = '1';
+                            }
+                            function triforce_stop(idName) {
+                                document.getElementById(idName).style.opacity = '0';
+                            }
+                            triforce_stop()
+                        </script>
+                    </td>
 
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                    <b>Whole-Body Integrated Motion Planning for Aerial Manipulators</b>
-                    <br>
-                    <br>
-                    <strong>Weiliang Deng</strong>*, Hongming Chen*, Biyu Ye, Haoran Chen, and Ximin Lyu<br>
-                    <p>Under review</p><br>
-                    <p>
-                        <a href="https://arxiv.org/pdf/2501.06493" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV1pxcHebEqr/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
-                    </p>
-                    <br>
-                    <p>A Novel Whole-body Motion Planner Framework for Aerial Manipulators</p>
-                </td>
-            </tr>
-            <tr>&nbsp</tr>
-            <tr>&nbsp</tr>
-            <tr>&nbsp</tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tr onmouseout="triforce_stop('workspace_rep')" onmouseover="triforce_start('workspace_rep')">
-                <td style="padding:10px;width:25%;vertical-align:middle">
-                    <div>
-                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="workspace_rep">
-                            <video loop autoplay muted width="400px" >
-                                <source src="assets/video/workspace.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                    <td style="padding:20px;width:70%;vertical-align:middle">
+                        <div class="paper-title">NDOB-Based Control of a UAV with Delta-Arm Considering Manipulator Dynamics</div>
+                        
+                        <div class="paper-authors">
+                            Hongming Chen, Biyu Ye, Xianqi Liang, <strong>Weiliang Deng</strong>, and Ximin Lyu
                         </div>
-                        <div>
-                            <img src="assets/img/workspace.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        
+                        <div class="paper-venue">
+                            <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, 2025
                         </div>
-                    </div>
-                    <script type="text/javascript">
-                        function triforce_start(idName) {
-                            document.getElementById(idName).style.opacity = '1';
-                        }
-                        function triforce_stop(idName) {
-                            document.getElementById(idName).style.opacity = '0';
-                        }
-                        triforce_stop()
-                    </script>
-                </td>
-                
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                    <b>Aerial Grasping via Maximizing Delta-Arm Workspace Utilization</b>
-                    <br>
-                    <br>
-                    Hongran Chen*, <strong>Weiliang Deng</strong>*, Biyu Ye, Yifan Xiong, Zongliang Pan and Ximin Lyu<br>
-                    <p><i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>, 2025</p><br>
-                    <p>
-                        <a href="https://arxiv.org/pdf/2506.15539" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV1JuZpYEE7S/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
-                    </p>
-                    <br>
-                    <p>We present a trajectory planner for aerial grasping that maximizes workspace use by learning the delta arm's feasibility and kinematics.</p>
-                </td>
-            </tr>
-            <tr>&nbsp</tr>
-            <tr>&nbsp</tr>
-            <tr>&nbsp</tr>
-        </table>
-        <table>
-            <tr onmouseout="triforce_stop('ndob_rep')" onmouseover="triforce_start('ndob_rep')">
-                <td style="padding:10px;width:25%;vertical-align:middle">
-                    <div style="position: relative;">
-                        <div style="opacity: 0; position: absolute; top: -22px; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="ndob_rep">
-                            <video loop autoplay muted width="400px" >
-                                <source src="assets/video/ndob.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                        
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/pdf/2501.06122" target="blank">📄 arXiv</a>
+                            <a href="https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">🎥 Demo</a>
                         </div>
-                        <div>
-                            <img src="assets/img/ndob.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        
+                        <div class="paper-abstract">
+                            Proposed an NDOB-based controller for UAV with delta-arm, enhancing agility and achieving millimeter-level precision through disturbance compensation and high-pass filtering.
                         </div>
-                    </div>
-                    <script type="text/javascript">
-                        function triforce_start(idName) {
-                            document.getElementById(idName).style.opacity = '1';
-                        }
-                        function triforce_stop(idName) {
-                            document.getElementById(idName).style.opacity = '0';
-                        }
-                        triforce_stop()
-                    </script>
-                </td>
-
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                    <b>NDOB-Based Control of a UAV with Delta-Arm Considering Manipulator Dynamics
-                    </b> <br>
-                    <br>
-                    Hongming Chen, Biyu Ye, Xianqi Liang, <strong>Weiliang Deng</strong>, and Ximin Lyu
-                    <br>
-                    <p><i>IEEE International Conferenceon Robotics and Automation (ICRA)</i>, 2025</p><br>
-                    <p>
-                        <a href="https://arxiv.org/pdf/2501.06122" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
-                    </p>
-                    <br>
-                    <p>Proposed an NDOB-based controller for UAV with delta-arm, enhancing agility and achieving millimeter-level precision through disturbance compensation and high-pass filtering.</p>
-                </td>
-            </tr>
-            <tr>&nbsp</tr>
-            <tr>&nbsp</tr>
-            <tr>&nbsp</tr>
-        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
     
 
     <h2>Experiences</h2>
-    <table>
-        <tbody>
+    <div class="experience-card">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tr>
-                <td width="800">
-                    <p><strong> Shanghai Ailab (March 2025 - Sept 2025)</strong></p>
-                    <i>Research Intern</i>
-                    <ul>
-                        <!-- <li>Overall GPA: <font style="color: #bb0000;"> 4.0/4.0</font></li> -->
-                        <li>Embodied AI @ Manipuation</li>
-                    </ul>
+                <td style="padding:10px;width:75%;vertical-align:middle">
+                    <div class="experience-title">Shanghai AI Laboratory</div>
+                    <div class="experience-position">Research Intern • March 2025 - Sept 2025</div>
+                    <div class="experience-details">
+                        <ul>
+                            <li>🤖 Embodied AI @ Manipulation</li>
+                            <li>🔬 Research on intelligent robotic systems and manipulation algorithms</li>
+                        </ul>
+                    </div>
                 </td>
-                <td>
-                    <img src="assets/img/shailab.png" width="180px" style="margin-left: 0px;">
+                <td style="padding:10px;width:25%;vertical-align:middle;text-align:center">
+                    <img src="assets/img/shailab.png" class="experience-logo" alt="Shanghai AI Laboratory">
                 </td>
             </tr>
-            <tr></tr>
-        </tbody>
-    </table>
-    <table>
-        <tbody>
+        </table>
+    </div>
+    <div class="experience-card">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tr>
-                <td width="800">
-                    <p><strong> Sun Yat-sen University, Shenzhen, China (Sep 2021 - Jul 2025)</strong></p>
-                    <i>B.E. in Intelligence Science and Technology</i>
-                    <ul>
-                        <li>2021 & 2022 & 2023 Sun Yat-sen University Scholarship</li>
-                    </ul>
+                <td style="padding:10px;width:75%;vertical-align:middle">
+                    <div class="experience-title">Sun Yat-sen University</div>
+                    <div class="experience-position">B.E. in Intelligence Science and Technology • Sep 2021 - Jul 2025</div>
+                    <div class="experience-details">
+                        <ul>
+                            <li>🏆 2021 & 2022 & 2023 Sun Yat-sen University Scholarship</li>
+                            <li>📍 Shenzhen, China</li>
+                        </ul>
+                    </div>
                 </td>
-                <td>
-                    <img src="assets/img/sysu_icon.svg" width="300px" style="margin-left: 0px;">
+                <td style="padding:10px;width:25%;vertical-align:middle;text-align:center">
+                    <img src="assets/img/sysu_icon.svg" class="experience-logo" alt="Sun Yat-sen University">
                 </td>
             </tr>
-            <tr></tr>
-        </tbody>
-    </table>
+        </table>
+    </div>
     <!-- <h2>Research Experience</h2>
     <table>
         <tbody>
