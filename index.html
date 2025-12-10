@@ -30,39 +30,22 @@
 
         /* 论文卡片样式 */
         .paper-card {
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-            margin: 20px 0;
-            padding: 25px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            position: relative;
-            overflow: hidden;
+            background: transparent;
+            margin: 25px 0;
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.9em;
         }
-
-        .paper-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-            border-color: rgba(0, 124, 186, 0.2);
-        }
-
-        .paper-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, #007cba, #bb0000);
-            border-radius: 15px 15px 0 0;
+        
+        .paper-card:last-child {
+            border-bottom: none;
         }
 
         .paper-title {
-            font-size: 1.4em;
+            font-size: 1.25em;
             font-weight: 700;
             color: #2c3e50;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             line-height: 1.3;
             text-decoration: none;
         }
@@ -74,55 +57,52 @@
 
         .paper-authors {
             color: #34495e;
-            font-size: 1.05em;
-            margin-bottom: 12px;
+            font-size: 0.95em;
+            margin-bottom: 10px;
             line-height: 1.4;
         }
 
         .paper-venue {
             color: #7f8c8d;
             font-style: italic;
-            margin-bottom: 15px;
-            font-size: 1em;
+            margin-bottom: 12px;
+            font-size: 0.9em;
         }
 
         .paper-links {
-            margin: 15px 0;
+            margin: 12px 0;
         }
 
         .paper-links a {
             display: inline-block;
-            background: linear-gradient(135deg, #007cba, #005a8b);
+            background: #007cba;
             color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
+            padding: 5px 12px;
+            border-radius: 4px;
             text-decoration: none;
             font-weight: 500;
-            margin-right: 10px;
-            margin-bottom: 8px;
-            transition: all 0.3s ease;
-            font-size: 0.9em;
+            margin-right: 8px;
+            margin-bottom: 6px;
+            font-size: 0.85em;
         }
 
         .paper-links a:hover {
-            background: linear-gradient(135deg, #bb0000, #8b0000);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(187, 0, 0, 0.3);
+            background: #bb0000;
             text-decoration: none;
             color: white;
         }
 
         .paper-abstract {
             color: #555;
-            line-height: 1.6;
-            font-size: 1em;
-            margin-top: 15px;
+            line-height: 1.5;
+            font-size: 0.9em;
+            margin-top: 12px;
         }
 
         .status-badge {
             display: inline-block;
             padding: 4px 12px;
-            border-radius: 15px;
+            border-radius: 4px;
             font-size: 0.8em;
             font-weight: 600;
             margin-left: 10px;
@@ -130,26 +110,20 @@
         }
 
         .status-accepted {
-            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            background: #27ae60;
             color: white;
         }
 
         .status-under-review {
-            background: linear-gradient(135deg, #f39c12, #e67e22);
+            background: #f39c12;
             color: white;
         }
 
         .video-container {
-            border-radius: 10px;
+            border-radius: 6px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
             position: relative;
             cursor: pointer;
-        }
-
-        .video-container:hover {
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
         .video-overlay {
@@ -163,43 +137,19 @@
         }
 
         .paper-image {
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .paper-image:hover {
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border-radius: 6px;
         }
 
         /* 经历卡片样式 */
         .experience-card {
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-            margin: 20px 0;
-            padding: 25px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            position: relative;
-            overflow: hidden;
+            background: transparent;
+            margin: 30px 0;
+            padding: 20px 0;
+            border-bottom: 1px solid #f0f0f0;
         }
-
-        .experience-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
-            border-color: rgba(0, 124, 186, 0.2);
-        }
-
-        .experience-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, #007cba, #bb0000);
-            border-radius: 15px 15px 0 0;
+        
+        .experience-card:last-child {
+            border-bottom: none;
         }
 
         .experience-title {
@@ -233,14 +183,32 @@
         }
 
         .experience-logo {
-            border-radius: 10px;
-            transition: all 0.3s ease;
+            border-radius: 6px;
             max-width: 200px;
             height: auto;
         }
-
-        .experience-logo:hover {
-            transform: scale(1.05);
+        
+        /* 缩窄publications和experiences的宽度 */
+        #selected_publications,
+        #experiences_section {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        /* 让相应的h2标题也对齐 */
+        h2:has(+ #selected_publications),
+        h2:has(+ #experiences_section) {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* 兼容性fallback - 如果浏览器不支持:has */
+        body > h2:nth-of-type(2),
+        body > h2:nth-of-type(3) {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -256,7 +224,7 @@
                     <div id="toptitle">
                         <h1 style="color: black;">Weiliang Deng &nbsp 邓伟亮</h1>
                     </div> 
-                    <p>I am a First-year Master student in <a href=https://ise.sysu.edu.cn/index.htm>The School of Intelligent Systems Engineering</a> at <a href=https://www.sysu.edu.cn/sysuen>Sun Yat-sen University</a>.
+                    <p>Hi there 👋 I am a First-year Master student in <a href=https://ise.sysu.edu.cn/index.htm>The School of Intelligent Systems Engineering</a> at <a href=https://www.sysu.edu.cn/sysuen>Sun Yat-sen University</a>.
                         Now I am a member of <a href=https://github.com/SYSU-HILAB>Hardware and Intelligence (HI) Lab </a> and working on Aerial Robots with Assoc. Prof. <a
                        href="https://scholar.google.com.hk/citations?user=obB-btEAAAAJ&hl=en">Ximin Lyu</a>. 
                        
@@ -294,12 +262,20 @@
     <ul>
         <div style="max-height:170px;width:fit-content;overflow:auto;background:#FFFFFF;">
             <li>
+                <p style="line-height: 1.5;">[2025/11/27] Our <a
+                            href="https://ieeexplore.ieee.org/document/11247296" target="blank">Aerial Grasping Paper</a> has been published on <strong>IEEE Xplore</strong>!🎉</p>
+            </li>
+            <li>
+                <p style="line-height: 1.5;">[2025/10/28] Our <a
+                            href="https://ieeexplore.ieee.org/document/11219352" target="blank">Whole-Body Motion Planning Paper</a> has been published on <strong>IEEE Xplore</strong>!🎉</p>
+            </li>
+            <li>
                 <p style="line-height: 1.5;">[2025/09/26] Our <a
-                            href="https://arxiv.org/abs/2501.06493" target="blank">Whole-Body Motion Planning Paper</a> has been accepted by <strong>IEEE Transactions on Robotics (T-RO)</strong> 2025!🔥</p>
+                            href="https://ieeexplore.ieee.org/document/11219352" target="blank">Whole-Body Motion Planning Paper</a> has been accepted by <strong>IEEE Transactions on Robotics (T-RO)</strong> 2025!🔥</p>
             </li>
             <li>
                 <p style="line-height: 1.5;">[2025/06/16] Our <a
-                            href="https://arxiv.org/pdf/2506.15539" target="blank">Paper</a> has been accepted by <img src="assets/img/IROS-HZ.png" height="20px" style="vertical-align:middle"> IROS 2025!  See you in Hangzhou!</p>
+                            href="https://ieeexplore.ieee.org/document/11247296" target="blank">Paper</a> has been accepted by <img src="assets/img/IROS-HZ.png" height="20px" style="vertical-align:middle"> IROS 2025!  See you in Hangzhou!</p>
             </li>
             <li>
                 <p style="line-height: 1.5;">[2025/01/28] Our <a
@@ -312,7 +288,7 @@
         <div class="paper-card">
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tr>
-                    <td style="padding:10px;width:45%;vertical-align:middle">
+                    <td style="padding:5px;width:40%;vertical-align:middle">
                         <div class="video-container" onmouseout="triforce_stop('whole_body_rep')" onmouseover="triforce_start('whole_body_rep')">
                             <div style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out; z-index: 10; display: flex; align-items: center; justify-content: center; border-radius: 10px; overflow: hidden;" id="whole_body_rep">
                                 <video loop autoplay muted style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 10px;">
@@ -321,7 +297,7 @@
                                 </video>
                             </div>
                             <div>
-                                <img src="assets/img/whole_body1.png" alt="Whole-Body Motion Planning" class="paper-image" style="height: 210px; width: 100%; padding-top:5px; padding-bottom: 5px;">
+                                <img src="assets/img/whole_body1.png" alt="Whole-Body Motion Planning" class="paper-image" style="height: 160px; width: 100%; padding-top:3px; padding-bottom: 3px;">
                             </div>
                         </div>
                         <script type="text/javascript">
@@ -335,7 +311,7 @@
                         </script>
                     </td>
                     
-                    <td style="padding:20px 20px 20px 30px;width:65%;vertical-align:middle">
+                    <td style="padding:10px 10px 10px 20px;width:60%;vertical-align:middle">
                         <div class="paper-title">Whole-Body Integrated Motion Planning for Aerial Manipulators</div>
                         
                         <div class="paper-authors">
@@ -343,11 +319,11 @@
                         </div>
                         
                         <div class="paper-venue">
-                            <strong><i>IEEE Transactions on Robotics (T-RO)</i>, 2025</strong> <strong><span style="color: red; font-style: italic;">[New!]</span></strong>
+                            <strong><i>IEEE Transactions on Robotics (T-RO)</i>, 2025</strong>
                         </div>
                         
                         <div class="paper-links">
-                            <a href="https://arxiv.org/abs/2501.06493" target="blank">📄 arXiv</a>
+                            <a href="https://ieeexplore.ieee.org/document/11219352" target="blank">📄 Paper</a>
                             <a href="https://am-planner.github.io" target="blank">🌐 Project</a>
                             <a href="https://www.youtube.com/watch?v=iuNFi-0dTUE" target="blank">🎥 Video</a>
                             <a href="https://github.com/SYSU-HILAB/am-planner" target="blank">💻 Code</a>
@@ -363,9 +339,9 @@
         <div class="paper-card">
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tr>
-                    <td style="padding:10px;width:45%;vertical-align:middle">
+                    <td style="padding:5px;width:40%;vertical-align:middle">
                         <div class="video-container" onmouseout="triforce_stop('robotwin_rep')" onmouseover="triforce_start('robotwin_rep')" style="position: relative; display: block;">
-                            <img src="assets/img/robotwin.png" alt="RoboTwin2.0" class="paper-image" style="width: 100%; height: 210px; object-fit: cover; padding-top:0px; padding-bottom: 10px; display: block;">
+                            <img src="assets/img/robotwin.png" alt="RoboTwin2.0" class="paper-image" style="width: 100%; height: 160px; object-fit: cover; padding-top:0px; padding-bottom: 8px; display: block;">
                             <div style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out; z-index: 100; display: flex; align-items: center; justify-content: center; border-radius: 10px; overflow: hidden; background: rgba(0,0,0,0.05);" id="robotwin_rep">
                                 <video loop autoplay muted style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 10px;">
                                     <source src="assets/video/RoboTwin2.0_video.mp4" type="video/mp4">
@@ -384,7 +360,7 @@
                         </script>
                     </td>
                     
-                    <td style="padding:20px 20px 20px 30px;width:65%;vertical-align:middle">
+                    <td style="padding:10px 10px 10px 20px;width:60%;vertical-align:middle">
                         <div class="paper-title">RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation</div>
                         
                         <div class="paper-authors">
@@ -411,7 +387,7 @@
         <div class="paper-card">
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tr>
-                    <td style="padding:10px;width:45%;vertical-align:middle">
+                    <td style="padding:5px;width:40%;vertical-align:middle">
                         <div class="video-container" onmouseout="triforce_stop('workspace_rep')" onmouseover="triforce_start('workspace_rep')">
                             <div style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out; z-index: 10; display: flex; align-items: center; justify-content: center; border-radius: 10px; overflow: hidden;" id="workspace_rep">
                                 <video loop autoplay muted style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 10px;">
@@ -420,7 +396,7 @@
                                 </video>
                             </div>
                             <div>
-                                <img src="assets/img/workspace.png" alt="Aerial Grasping" class="paper-image" style="width: 100%; padding-top:0px; padding-bottom: 10px;">
+                                <img src="assets/img/workspace.png" alt="Aerial Grasping" class="paper-image" style="width: 100%; padding-top:0px; padding-bottom: 8px;">
                             </div>
                         </div>
                         <script type="text/javascript">
@@ -434,7 +410,7 @@
                         </script>
                     </td>
                     
-                    <td style="padding:20px 20px 20px 30px;width:65%;vertical-align:middle">
+                    <td style="padding:10px 10px 10px 20px;width:60%;vertical-align:middle">
                         <div class="paper-title">Aerial Grasping via Maximizing Delta-Arm Workspace Utilization</div>
                         
                         <div class="paper-authors">
@@ -446,7 +422,7 @@
                         </div>
                         
                         <div class="paper-links">
-                            <a href="https://arxiv.org/pdf/2506.15539" target="blank">📄 arXiv</a>
+                            <a href="https://ieeexplore.ieee.org/document/11247296" target="blank">📄 Paper</a>
                             <a href="https://www.bilibili.com/video/BV1JuZpYEE7S/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">🎥 Demo</a>
                         </div>
                         
@@ -460,7 +436,7 @@
         <div class="paper-card">
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tr>
-                    <td style="padding:10px;width:45%;vertical-align:middle">
+                    <td style="padding:5px;width:40%;vertical-align:middle">
                         <div class="video-container" onmouseout="triforce_stop('ndob_rep')" onmouseover="triforce_start('ndob_rep')">
                             <div style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out; z-index: 10; display: flex; align-items: center; justify-content: center; border-radius: 10px; overflow: hidden;" id="ndob_rep">
                                 <video loop autoplay muted style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 10px;">
@@ -469,7 +445,7 @@
                                 </video>
                             </div>
                             <div>
-                                <img src="assets/img/ndob.png" alt="NDOB-Based Control" class="paper-image" style="width: 100%; padding-top:0px; padding-bottom: 10px;">
+                                <img src="assets/img/ndob.png" alt="NDOB-Based Control" class="paper-image" style="width: 100%; padding-top:0px; padding-bottom: 8px;">
                             </div>
                         </div>
                         <script type="text/javascript">
@@ -483,7 +459,7 @@
                         </script>
                     </td>
 
-                    <td style="padding:20px 20px 20px 30px;width:65%;vertical-align:middle">
+                    <td style="padding:10px 10px 10px 20px;width:60%;vertical-align:middle">
                         <div class="paper-title">NDOB-Based Control of a UAV with Delta-Arm Considering Manipulator Dynamics</div>
                         
                         <div class="paper-authors">
@@ -510,43 +486,45 @@
     
 
     <h2>Experiences</h2>
-    <div class="experience-card">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tr>
-                <td style="padding:10px;width:75%;vertical-align:middle">
-                    <div class="experience-title">Shanghai AI Laboratory</div>
-                    <div class="experience-position">Research Intern • March 2025 - Sept 2025</div>
-                    <div class="experience-details">
-                        <ul>
-                            <li>🤖 Embodied AI @ Manipulation</li>
-                            <li>🔬 Research on intelligent robotic systems and manipulation algorithms</li>
-                        </ul>
-                    </div>
-                </td>
-                <td style="padding:10px;width:25%;vertical-align:middle;text-align:center">
-                    <img src="assets/img/shailab.png" class="experience-logo" alt="Shanghai AI Laboratory">
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="experience-card">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tr>
-                <td style="padding:10px;width:75%;vertical-align:middle">
-                    <div class="experience-title">Sun Yat-sen University</div>
-                    <div class="experience-position">B.E. in Intelligence Science and Technology • Sep 2021 - Jul 2025</div>
-                    <div class="experience-details">
-                        <ul>
-                            <li>🏆 2021 & 2022 & 2023 Sun Yat-sen University Scholarship</li>
-                            <li>📍 Shenzhen, China</li>
-                        </ul>
-                    </div>
-                </td>
-                <td style="padding:10px;width:25%;vertical-align:middle;text-align:center">
-                    <img src="assets/img/sysu_icon.svg" class="experience-logo" alt="Sun Yat-sen University">
-                </td>
-            </tr>
-        </table>
+    <div id="experiences_section">
+        <div class="experience-card">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tr>
+                    <td style="padding:10px;width:75%;vertical-align:middle">
+                        <div class="experience-title">Shanghai AI Laboratory</div>
+                        <div class="experience-position">Research Intern • March 2025 - Sept 2025</div>
+                        <div class="experience-details">
+                            <ul>
+                                <li>🤖 Embodied AI @ Manipulation</li>
+                                <li>🔬 Research on intelligent robotic systems and manipulation algorithms</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="padding:10px;width:25%;vertical-align:middle;text-align:center">
+                        <img src="assets/img/shailab.png" class="experience-logo" alt="Shanghai AI Laboratory">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="experience-card">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tr>
+                    <td style="padding:10px;width:75%;vertical-align:middle">
+                        <div class="experience-title">Sun Yat-sen University</div>
+                        <div class="experience-position">B.E. in Intelligence Science and Technology • Sep 2021 - Jul 2025</div>
+                        <div class="experience-details">
+                            <ul>
+                                <li>🏆 2021 & 2022 & 2023 Sun Yat-sen University Scholarship</li>
+                                <li>📍 Shenzhen, China</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="padding:10px;width:25%;vertical-align:middle;text-align:center">
+                        <img src="assets/img/sysu_icon.svg" class="experience-logo" alt="Sun Yat-sen University">
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
     <!-- <h2>Research Experience</h2>
     <table>
