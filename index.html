@@ -112,7 +112,8 @@
             margin-bottom: 4px;
         }
         
-        /* 缩窄publications和experiences的宽度 */
+        /* 缩窄news、publications和experiences的宽度 */
+        #news_section,
         #selected_publications,
         #experiences_section {
             max-width: 1000px;
@@ -120,6 +121,7 @@
         }
         
         /* 让相应的h2标题也对齐 */
+        h2:has(+ #news_section),
         h2:has(+ #selected_publications),
         h2:has(+ #experiences_section) {
             max-width: 1000px;
@@ -128,11 +130,25 @@
         }
         
         /* 兼容性fallback - 如果浏览器不支持:has */
+        body > h2:nth-of-type(1),
         body > h2:nth-of-type(2),
         body > h2:nth-of-type(3) {
             max-width: 1000px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .news-scroll {
+            max-height: 170px;
+            width: 100%;
+            overflow: auto;
+            background: #FFFFFF;
+        }
+
+        .news-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
         }
     </style>
 </head>
@@ -183,33 +199,35 @@
     </table>
 
     <h2>News</h2>
-    <ul>
-        <div style="max-height:170px;width:fit-content;overflow:auto;background:#FFFFFF;">
-            <li>
-                <p style="line-height: 1.5;">[2025/12/15] Delivered a talk at 非凸空间 — <a href="https://mp.weixin.qq.com/s/8-dvlEfIHbm79zITGTLoXg" target="blank">details here</a>.</p>
-            </li>
-            <li>
-                <p style="line-height: 1.5;">[2025/11/27] Our <a
-                            href="https://ieeexplore.ieee.org/document/11247296" target="blank">Aerial Grasping Paper</a> has been published on <strong>IEEE Xplore</strong>!🎉</p>
-            </li>
-            <li>
-                <p style="line-height: 1.5;">[2025/10/28] Our <a
-                            href="https://ieeexplore.ieee.org/document/11219352" target="blank">Whole-Body Motion Planning Paper</a> has been published on <strong>IEEE Xplore</strong>!🎉</p>
-            </li>
-            <li>
-                <p style="line-height: 1.5;">[2025/09/26] Our <a
-                            href="https://ieeexplore.ieee.org/document/11219352" target="blank">Whole-Body Motion Planning Paper</a> has been accepted by <strong>IEEE Transactions on Robotics (T-RO)</strong> 2025!🔥</p>
-            </li>
-            <li>
-                <p style="line-height: 1.5;">[2025/06/16] Our <a
-                            href="https://ieeexplore.ieee.org/document/11247296" target="blank">Paper</a> has been accepted by <img src="assets/img/IROS-HZ.png" height="20px" style="vertical-align:middle"> IROS 2025!  See you in Hangzhou!</p>
-            </li>
-            <li>
-                <p style="line-height: 1.5;">[2025/01/28] Our <a
-                            href="https://arxiv.org/pdf/2501.06122" target="blank">NDOB-Based Controller</a> has been accepted by <img src="assets/img/ICRA-ALT.jpg" height="20px" style="vertical-align:middle"> ICRA 2025!  See you in Atlanta!</p>
-            </li>
+    <div id="news_section">
+        <div class="news-scroll">
+            <ul class="news-list">
+                <li>
+                    <p style="line-height: 1.5;">[2025/12/15] Delivered a talk at 非凸空间 — <a href="https://mp.weixin.qq.com/s/8-dvlEfIHbm79zITGTLoXg" target="blank">details here</a>.</p>
+                </li>
+                <li>
+                    <p style="line-height: 1.5;">[2025/11/27] Our <a
+                                href="https://ieeexplore.ieee.org/document/11247296" target="blank">Aerial Grasping Paper</a> has been published on <strong>IEEE Xplore</strong>!🎉</p>
+                </li>
+                <li>
+                    <p style="line-height: 1.5;">[2025/10/28] Our <a
+                                href="https://ieeexplore.ieee.org/document/11219352" target="blank">Whole-Body Motion Planning Paper</a> has been published on <strong>IEEE Xplore</strong>!🎉</p>
+                </li>
+                <li>
+                    <p style="line-height: 1.5;">[2025/09/26] Our <a
+                                href="https://ieeexplore.ieee.org/document/11219352" target="blank">Whole-Body Motion Planning Paper</a> has been accepted by <strong>IEEE Transactions on Robotics (T-RO)</strong> 2025!🔥</p>
+                </li>
+                <li>
+                    <p style="line-height: 1.5;">[2025/06/16] Our <a
+                                href="https://ieeexplore.ieee.org/document/11247296" target="blank">Paper</a> has been accepted by <img src="assets/img/IROS-HZ.png" height="20px" style="vertical-align:middle"> IROS 2025!  See you in Hangzhou!</p>
+                </li>
+                <li>
+                    <p style="line-height: 1.5;">[2025/01/28] Our <a
+                                href="https://arxiv.org/pdf/2501.06122" target="blank">NDOB-Based Controller</a> has been accepted by <img src="assets/img/ICRA-ALT.jpg" height="20px" style="vertical-align:middle"> ICRA 2025!  See you in Atlanta!</p>
+                </li>
+            </ul>
         </div>
-    </ul>
+    </div>
     <h2>Publications</h2>
     <div id="selected_publications">
         <div class="paper-card">
